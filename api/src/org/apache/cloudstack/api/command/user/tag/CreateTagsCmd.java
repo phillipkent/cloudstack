@@ -45,7 +45,7 @@ public class CreateTagsCmd extends BaseAsyncCmd{
     // ////////////// API parameters /////////////////////
     // ///////////////////////////////////////////////////
 
-    @Parameter(name = ApiConstants.TAGS, type = CommandType.MAP, required=true, description = "Map of tags (key/value pairs)")
+    @Parameter(name = ApiConstants.TAGS, type = CommandType.MAP, required=true, description = "Map of tags (key/value pairs). You must use a sequence of parameter inputs like this: &tags[0].key=KEY1&tags[0].value=VALUE1&tags[1].key=KEY2&tags[1].value=VALUE2&... .")
     private Map tag;
 
     @Parameter(name=ApiConstants.RESOURCE_TYPE, type=CommandType.STRING, required=true, description="type of the resource")
