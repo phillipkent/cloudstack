@@ -36,7 +36,8 @@ import org.apache.log4j.Logger;
 import com.cloud.configuration.ResourceCount;
 import com.cloud.user.Account;
 
-@APICommand(name = "updateResourceCount", description="Recalculate and update resource count for an account or domain.", responseObject=ResourceCountResponse.class)
+/* INTEROUTE VDC - THIS COMMAND IS REMOVED FROM PUBLISHED DOCUMENTATION */
+@APICommand(name = "updateResourceCount", description="Recalculate and update resource count for an account or domain.", responseObject=ResourceCountResponse.class, includeInApiDoc=false))
 public class UpdateResourceCountCmd extends BaseCmd {
     public static final Logger s_logger = Logger.getLogger(UpdateResourceCountCmd.class.getName());
 

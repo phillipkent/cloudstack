@@ -26,38 +26,38 @@ version="1.0">
 <link rel= "stylesheet" href="../includes/main.css" type="text/css" />
 <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
 
-<title>Apache CloudStack | The Power Behind Your Cloud</title>
+<title>Interoute VDC</title>
 </head>
 
 <body>
-<div id="insidetopbg">
-<div id="inside_wrapper">
-	<div class="uppermenu_panel">
-            <div class="uppermenu_box">       
+<div id="api_insidetopbg">
+<div id="api_inside_wrapper">
+	<div class="api_uppermenu_panel">
+            <div class="api_uppermenu_box">       
 </div>
         </div>
         
-        <div id="main_master">
-            <div id="inside_header">
+        <div id="api_main_master">
+            <div id="api_inside_header">
 
-                <div class="header_top">
-                    <a class="cloud_logo" href="http://cloudstack.org"></a>
-                    <div class="mainemenu_panel">
+                <div class="api_header_top">
+                    <a class="api_cloud_logo" href="vdc.interoute.com"></a>
+                    <div class="api_mainemenu_panel">
                         
                     </div>
                 </div>            
             </div>
 
-            <div id="main_content">
+            <div id="api_main_content">
              	
-                <div class="inside_apileftpanel">
-                	<div class="inside_contentpanel" style="width:930px;">
+                <div class="api_inside_apileftpanel">
+                	<div class="api_inside_contentpanel" style="width:930px;">
                     	<div class="api_titlebox">
                         	<div class="api_titlebox_left">
 				<xsl:for-each select="command/command">
                            		<!-- Modify this line for the release version -->
                            		<span>
-									Apache CloudStack v4.2.0 Root Admin API Reference
+									Interoute VDC API Reference (for Root Admin)
 								</span>
 								<p></p>
                                 <h1><xsl:value-of select="name"/></h1>
@@ -72,7 +72,7 @@ version="1.0">
                         </div>
                     	<div class="api_tablepanel">     
                          	<h2>Request parameters</h2>
-                        	<table class="apitable">
+                        	<table class="api_table">
                             	<tr class="hed">
                                 	<td style="width:200px;"><strong>Parameter Name</strong></td>
 
@@ -99,7 +99,7 @@ version="1.0">
                          
                          <div class="api_tablepanel">     
                          	<h2>Response Tags</h2>
-                        	<table class="apitable">
+                        	<table class="api_table">
                             	<tr class="hed">
                                 	<td style="width:200px;"><strong>Response Name</strong></td>
                                     <td style="width:500px;">Description</td>
@@ -140,8 +140,8 @@ version="1.0">
             </div>
 
         </div><!-- #BeginLibraryItem "/libraries/footer.lbi" -->
-<div id="footer">
-<div id="comments_thread">
+<div id="api_footer">
+<div id="api_comments_thread">
     <script type="text/javascript" src="https://comments.apache.org/show_comments.lua?site=test" async="true">
     </script>
     <noscript>
@@ -149,10 +149,8 @@ version="1.0">
     </noscript>
   </div>
 
-        	<div id="footer_mainmaster">
-                <p>Copyright © 2013 The Apache Software Foundation, Licensed under the
-                   <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0.</a> <br />
-                Apache, CloudStack, Apache CloudStack, the Apache CloudStack logo, the CloudMonkey logo  and the Apache feather logo are trademarks of The Apache Software Foundation.</p> 
+        	<div id="api_footer_mainmaster">
+                <p>Adapted from the Apache CloudStack documentation source, under terms of the Apache License, Version 2.0. Additional material Copyright © <a href="http://www.interoute.com" target="_blank">Interoute Communications Limited</a>, 2015.</p> 
            </div>
         </div>
   </div>

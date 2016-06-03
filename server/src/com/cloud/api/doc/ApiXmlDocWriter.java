@@ -128,7 +128,7 @@ public class ApiXmlDocWriter {
         }
 
         if ((fileNames == null) || (fileNames.length == 0)) {
-            System.out.println("Please specify input file(s) separated by coma using -f option");
+            System.out.println("Please specify input file(s) separated by comma using -f option");
             System.exit(2);
         }
 
@@ -174,6 +174,7 @@ public class ApiXmlDocWriter {
         }
 
         // Login and logout commands are hardcoded
+
         all_api_commands.put("login", "login");
         domain_admin_api_commands.put("login", "login");
         regular_user_api_commands.put("login", "login");
@@ -252,7 +253,7 @@ public class ApiXmlDocWriter {
                 } else {
                     writeCommand(out, key);
                     writeCommand(rootAdmin, key);
-
+		
                     // Write single commands to separate xml files
                     if (!key.equals("login")) {
                         ObjectOutputStream singleRootAdminCommandOs = xs.createObjectOutputStream(new FileWriter(rootAdminDirName + "/" + key + ".xml"), "command");
@@ -280,7 +281,7 @@ public class ApiXmlDocWriter {
             it = all_api_commands_sorted.keySet().iterator();
             while (it.hasNext()) {
                 String key = (String) it.next();
-
+		
                 if (key.equals("login")) {
                     writeLoginCommand(rootAdminSorted);
                     writeLoginCommand(outDomainAdminSorted);
@@ -299,7 +300,7 @@ public class ApiXmlDocWriter {
                     if (regular_user_api_commands.containsKey(key)) {
                         writeCommand(regularUserSorted, key);
                     }
-                }
+		} 
             }
 
             out.close();

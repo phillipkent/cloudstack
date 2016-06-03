@@ -67,7 +67,7 @@ import com.cloud.user.Account;
 import com.cloud.uservm.UserVm;
 
 
-@APICommand(name = "deployVirtualMachine", description="Creates and automatically starts a virtual machine based on a service offering, disk offering, and template.", responseObject=UserVmResponse.class)
+@APICommand(name = "deployVirtualMachine", description="Creates and automatically starts a virtual machine based on a service offering, template and availability zone.", responseObject=UserVmResponse.class)
 public class DeployVMCmd extends BaseAsyncCreateCmd {
     public static final Logger s_logger = Logger.getLogger(DeployVMCmd.class.getName());
 
@@ -108,7 +108,7 @@ public class DeployVMCmd extends BaseAsyncCreateCmd {
     //Network information
     @ACL(accessType = AccessType.UseNetwork)
     @Parameter(name=ApiConstants.NETWORK_IDS, type=CommandType.LIST, collectionType=CommandType.UUID, entityType=NetworkResponse.class,
-            description="list of network ids used by virtual machine. Can't be specified with ipToNetworkList parameter")
+            description="list of network ids to be used by the virtual machine. Mutually exclusive with the ipToNetworkList parameter")
     private List<Long> networkIds;
 
     //DataDisk information
@@ -116,7 +116,7 @@ public class DeployVMCmd extends BaseAsyncCreateCmd {
     @Parameter(name=ApiConstants.DISK_OFFERING_ID, type=CommandType.UUID, entityType=DiskOfferingResponse.class,
             description="the ID of the disk offering for the virtual machine. If the template is of ISO format," +
                     " the diskOfferingId is for the root disk volume. Otherwise this parameter is used to indicate the " +
-                    "offering for the data disk volume. If the templateId parameter passed is from a Template object," +
+                    "offering for an additional data disk volume. If the templateId parameter passed is from a Template object," +
                     " the diskOfferingId refers to a DATA Disk Volume created. If the templateId parameter passed is " +
                     "from an ISO object, the diskOfferingId refers to a ROOT Disk Volume created.")
     private Long diskOfferingId;
@@ -130,7 +130,7 @@ public class DeployVMCmd extends BaseAsyncCreateCmd {
     @Parameter(name=ApiConstants.HYPERVISOR, type=CommandType.STRING, description="the hypervisor on which to deploy the virtual machine")
     private String hypervisor;
 
-    @Parameter(name=ApiConstants.USER_DATA, type=CommandType.STRING, description="an optional binary data that can be sent to the virtual machine upon a successful deployment. This binary data must be base64 encoded before adding it to the request. Using HTTP GET (via querystring), you can send up to 2KB of data after base64 encoding. Using HTTP POST(via POST body), you can send up to 32K of data after base64 encoding.", length=32768)
+    @Parameter(name=ApiConstants.USER_DATA, type=CommandType.STRING, description="optional binary data that can be sent to the virtual machine upon a successful deployment. This binary data must be base64 encoded before adding it to the request. Using HTTP GET (via querystring), you can send up to 2KB of data after base64 encoding. Using HTTP POST(via POST body), you can send up to 32K of data after base64 encoding.", length=32768)
     private String userData;
 
     @Parameter(name=ApiConstants.SSH_KEYPAIR, type=CommandType.STRING, description="name of the ssh key pair used to login to the virtual machine")
@@ -155,14 +155,14 @@ public class DeployVMCmd extends BaseAsyncCreateCmd {
     private List<String> securityGroupNameList;
 
     @Parameter(name = ApiConstants.IP_NETWORK_LIST, type = CommandType.MAP,
-            description = "ip to network mapping. Can't be specified with networkIds parameter." +
+            description = "ip to network mapping. Mutually exclusive with with the networkIds parameter." +
                     " Example: iptonetworklist[0].ip=10.10.10.11&iptonetworklist[0].ipv6=fc00:1234:5678::abcd&iptonetworklist[0].networkid=uuid - requests to use ip 10.10.10.11 in network id=uuid")
     private Map ipToNetworkList;
 
-    @Parameter(name=ApiConstants.IP_ADDRESS, type=CommandType.STRING, description="the ip address for default vm's network")
+    @Parameter(name=ApiConstants.IP_ADDRESS, type=CommandType.STRING, description="the ip address for the VM's default network")
     private String ipAddress;
 
-    @Parameter(name=ApiConstants.IP6_ADDRESS, type=CommandType.STRING, description="the ipv6 address for default vm's network")
+    @Parameter(name=ApiConstants.IP6_ADDRESS, type=CommandType.STRING, description="the ipv6 address for the VM's default network")
     private String ip6Address;
 
     @Parameter(name=ApiConstants.KEYBOARD, type=CommandType.STRING, description="an optional keyboard device type for the virtual machine. valid value can be one of de,de-ch,es,fi,fr,fr-be,fr-ch,is,it,jp,nl-be,no,pt,uk,us")
@@ -185,7 +185,7 @@ public class DeployVMCmd extends BaseAsyncCreateCmd {
             + "Mutually exclusive with affinitygroupids parameter")
     private List<String> affinityGroupNameList;
 
-    @Parameter(name=ApiConstants.DISPLAY_VM, type=CommandType.BOOLEAN, since="4.2", description="an optional field, whether to the display the vm to the end user or not.")
+    @Parameter(name=ApiConstants.DISPLAY_VM, type=CommandType.BOOLEAN, since="4.2", description="an optional field, whether to the display the VM to the end user or not.")
     private Boolean displayVm;
 
     @Parameter(name = ApiConstants.DETAILS,

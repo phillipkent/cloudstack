@@ -30,45 +30,45 @@ version="1.0">
 </head>
 
 <body>
-<div id="insidetopbg">
-<div id="inside_wrapper">
-	<div class="uppermenu_panel">
-            <div class="uppermenu_box"><!-- #BeginLibraryItem "/libraries/uppermenu.lbi" -->
+<div id="api_insidetopbg">
+<div id="api_inside_wrapper">
+	<div class="api_uppermenu_panel">
+            <div class="api_uppermenu_box"><!-- #BeginLibraryItem "/libraries/uppermenu.lbi" -->
 
-<div class="uppermenu">
+<div class="api_uppermenu">
        <a href="libraries/learn_download.html">Downloads</a> | <a href="libraries/company_news.html">News</a> | <a href="#">Contact Us</a> 
 </div><!-- #EndLibraryItem --></div>
         </div>
         
-        <div id="main_master">
-            <div id="inside_header">
+        <div id="api_main_master">
+            <div id="api_inside_header">
 
-                <div class="header_top">
-                    <a class="cloud_logo" href="index.html"></a>
-                    <div class="mainemenu_panel">
+                <div class="api_header_top">
+                    <a class="api_cloud_logo" href="index.html"></a>
+                    <div class="api_mainemenu_panel">
                         
                     </div>
                 </div>
-                <div class="insideheader_bot">
-                	<div class="insideheader_botleft">
+                <div class="api_insideheader_bot">
+                	<div class="api_insideheader_botleft">
                     	<h1></h1>
                     </div>
 
                     <div class="insideheader_botright">
                     	<div class="insideheader_button">
-                        	<a class="insjoincomm_button" href="#"></a>
-                            <a class="insdownload_button" href="#"></a>
+                        	<a class="api_insjoincomm_button" href="#"></a>
+                            <a class="api_insdownload_button" href="#"></a>
                         </div>
-                        <div class="insheader_buttonshadow"></div>
+                        <div class="api_insheader_buttonshadow"></div>
                     </div>
                 </div>
             
             </div>
 
-            <div id="main_content">
+            <div id="api_main_content">
              	
-                <div class="inside_apileftpanel">
-                	<div class="inside_contentpanel" style="width:930px;">
+                <div class="api_inside_apileftpanel">
+                	<div class="api_inside_contentpanel" style="width:930px;">
                     	<div class="api_titlebox">
                         	<div class="api_titlebox_left">
 				<xsl:for-each select="command/command">
@@ -84,7 +84,7 @@ version="1.0">
                         </div>
                     	<div class="api_tablepanel">     
                          	<h2>Request parameters</h2>
-                        	<table class="apitable">
+                        	<table class="api_table">
                             	<tr class="hed">
                                 	<td style="width:200px;"><strong>Parameter Name</strong></td>
 
@@ -105,7 +105,7 @@ version="1.0">
                          
                          <div class="api_tablepanel">     
                          	<h2>Response Tags</h2>
-                        	<table class="apitable">
+                        	<table class="api_table">
                             	<tr class="hed">
                                 	<td style="width:200px;"><strong>Response Name</strong></td>
                                     <td style="width:500px;">Description</td>
@@ -145,10 +145,10 @@ version="1.0">
      
             </div>
         </div><!-- #BeginLibraryItem "/libraries/footer.lbi" -->
-<div id="footer">
+<div id="api_footer">
 
-        	<div id="footer_mainmaster">
-            	<ul class="footer_linksbox">
+        	<div id="api_footer_mainmaster">
+            	<ul class="api_footer_linksbox">
                 	<li><strong> Main </strong></li>
                     <li> <a href="index.html"> Home</a> </li>
                     <li> <a href="learn_whatcloud.html"> Learn</a> </li>
@@ -179,9 +179,7 @@ version="1.0">
                     <li> <a href="#"> Contacts</a> </li>
 
                 </ul>
-                <p>Copyright © 2013 The Apache Software Foundation, Licensed under the
-                   <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0.</a> <br />
-                Apache, CloudStack, Apache CloudStack, the Apache CloudStack logo, the CloudMonkey logo  and the Apache feather logo are trademarks of The Apache Software Foundation.</p>
+                <p>Adapted from the Apache CloudStack documentation source, under terms of the Apache License, Version 2.0. Additional material Copyright © <a href="http://www.interoute.com" target="_blank">Interoute Communications Limited</a>, 2015.</p>
 
             </div>
         </div>

@@ -60,8 +60,10 @@ public class ListZonesByCmd extends BaseListCmd {
     @Parameter(name=ApiConstants.NETWORK_TYPE, type=CommandType.STRING, description="the network type of the zone that the virtual machine belongs to")
     private String networkType;
     
+    /*  INTEROUTE VDC: THIS OPTION IS HIDDEN
     @Parameter(name=ApiConstants.SHOW_CAPACITIES, type=CommandType.BOOLEAN, description="flag to display the capacity of the zones")
     private Boolean showCapacities;
+    */
     
     @Parameter(name = ApiConstants.TAGS, type = CommandType.MAP, description = "List zones by resource tags (key/value pairs)", since="4.3")
     private Map tags;

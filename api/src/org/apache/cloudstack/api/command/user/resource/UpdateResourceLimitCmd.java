@@ -31,7 +31,8 @@ import org.apache.log4j.Logger;
 
 import com.cloud.configuration.ResourceLimit;
 
-@APICommand(name = "updateResourceLimit", description="Updates resource limits for an account or domain.", responseObject=ResourceLimitResponse.class)
+/* INTEROUTE VDC - THIS COMMAND IS REMOVED FROM PUBLISHED DOCUMENTATION */
+@APICommand(name = "updateResourceLimit", description="Updates resource limits for an account or domain.", responseObject=ResourceLimitResponse.class,  includeInApiDoc=false)
 public class UpdateResourceLimitCmd extends BaseCmd {
     public static final Logger s_logger = Logger.getLogger(UpdateResourceLimitCmd.class.getName());
 

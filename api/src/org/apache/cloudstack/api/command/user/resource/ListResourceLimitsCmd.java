@@ -40,22 +40,22 @@ public class ListResourceLimitsCmd extends BaseListProjectAndAccountResourcesCmd
     //////////////// API parameters /////////////////////
     /////////////////////////////////////////////////////
 
-    @Parameter(name=ApiConstants.ID, type=CommandType.LONG, description="Lists resource limits by ID.")
+    @Parameter(name=ApiConstants.ID, type=CommandType.LONG, description="list resource limits by ID.")
     private Long id;
 
-    @Parameter(name=ApiConstants.RESOURCE_TYPE, type=CommandType.INTEGER, description="Type of resource to update. Values are 0, 1, 2, 3, and 4." +
-    		                                                                            "0 - Instance. Number of instances a user can create. " +
-                                                                                        "1 - IP. Number of public IP addresses an account can own. " +
-                                                                                        "2 - Volume. Number of disk volumes an account can own." +
-                                                                                        "3 - Snapshot. Number of snapshots an account can own." +
-                                                                                        "4 - Template. Number of templates an account can register/create." +
-                                                                                        "5 - Project. Number of projects an account can own." +
-                                                                                        "6 - Network. Number of networks an account can own." +
-                                                                                        "7 - VPC. Number of VPC an account can own." +
-                                                                                        "8 - CPU. Number of CPU an account can allocate for his resources." +
-                                                                                        "9 - Memory. Amount of RAM an account can allocate for his resources." +
-                                                                                        "10 - Primary Storage. Amount of Primary storage an account can allocate for his resoruces." +
-                                                                                        "11 - Secondary Storage. Amount of Secondary storage an account can allocate for his resources.")
+    @Parameter(name=ApiConstants.RESOURCE_TYPE, type=CommandType.INTEGER, description="list resource limits by type. Values are 0 to 11 as follows." +
+    		                                                                            "0 - Instance. Limit value for instances (virtual machines). " +
+                                                                                        "1 - IP. Limit for public IP addresses. " +
+                                                                                        "2 - Volume. Limit for disk volumes. " +
+                                                                                        "3 - Snapshot. Limit for snapshots. " +
+                                                                                        "4 - Template. Limit for templates. " +
+                                                                                        "5 - Project. Limit for projects. " +
+                                                                                        "6 - Network. Limit for networks. " +
+                                                                                        "7 - VPC. Limit for VPCs. " +
+                                                                                        "8 - CPU. Limit for CPUs allocated to VMs. " +
+                                                                                        "9 - Memory. Limit for RAM (in MB) allocated to VMs. " +
+                                                                                        "10 - Primary Storage. Limit for Primary storage (in GB) allocated to VMs. " +
+                                                                                        "11 - Secondary Storage. Limit for Secondary storage (in GB).")
     private Integer resourceType;
 
     /////////////////////////////////////////////////////

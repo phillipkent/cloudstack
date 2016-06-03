@@ -39,7 +39,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-@APICommand(name = "changeServiceForVirtualMachine", responseObject=UserVmResponse.class, description="Changes the service offering for a virtual machine. " +
+@APICommand(name = "changeServiceForVirtualMachine", includeInApiDoc=false, responseObject=UserVmResponse.class, description="Changes the service offering for a virtual machine. " +
                                             "The virtual machine must be in a \"Stopped\" state for " +
                                             "this command to take effect.")
 public class UpgradeVMCmd extends BaseCmd {

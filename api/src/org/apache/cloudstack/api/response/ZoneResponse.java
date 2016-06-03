@@ -96,7 +96,8 @@ public class ZoneResponse extends BaseResponse {
     @SerializedName(ApiConstants.DHCP_PROVIDER) @Param(description="the dhcp Provider for the Zone")
     private String dhcpProvider;
 
-    @SerializedName("capacity")  @Param(description="the capacity of the Zone", responseObject = CapacityResponse.class)
+    /* Modification for Interoute: This response is removed from published documentation */
+    @SerializedName("capacity")  @Param(description="the capacity of the Zone", responseObject = CapacityResponse.class, includeInApiDoc=false)
     private List<CapacityResponse> capacitites;
 
     @SerializedName(ApiConstants.LOCAL_STORAGE_ENABLED) @Param(description="true if local storage offering enabled, false otherwise")

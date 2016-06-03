@@ -36,7 +36,8 @@ public class ResourceLimitResponse extends BaseResponse implements ControlledEnt
     @SerializedName(ApiConstants.DOMAIN) @Param(description="the domain name of the resource limit")
     private String domainName;
 
-    @SerializedName(ApiConstants.RESOURCE_TYPE) @Param(description="resource type. Values include 0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11. See the resourceType parameter for more information on these values.")
+    @SerializedName(ApiConstants.RESOURCE_TYPE) @Param(description="resource type. Values are 0 to 11. 0 - Instance (virtual machine). 1 - IP (public IP address). 2 - Volume. 3 - Snapshot. "+
+                                                         "4 - Template. 5 - Project. 6 - Network. 7 - VPC. 8 - CPU. 9 - Memory (RAM). 10 - Primary storage. 11 - Secondary storage")
     private String resourceType;
 
     @SerializedName("max") @Param(description="the maximum number of the resource. A -1 means the resource currently has no limit.")

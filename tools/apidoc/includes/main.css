@@ -1,5 +1,10 @@
 @charset "UTF-8";
 /*
+Adaptation of this file for Interoute VDC 2.0 API Documentation
+(c) Interoute Communications Limited 2015
++++++++++++
+Source copyright:
+
 * Licensed to the Apache Software Foundation (ASF) under one
 * or more contributor license agreements.  See the NOTICE file
 * distributed with this work for additional information
@@ -27,17 +32,17 @@
 }
 
 body{
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:Calibri, Helvetica, sans-serif;
 	font-size:12px;
-	color:#333;
+	color:#000000;
 	font-weight:normal;
 	background:#FFF repeat top left;
 	margin:0;
 	padding:0;
 }
 
-
-#inside_wrapper {
+/*Interoute name change for inside_wrapper */
+#api_inside_wrapper {
 	width:auto;
 	height:auto;
 	margin:0;
@@ -45,7 +50,8 @@ body{
 	overflow:hidden;
 }
 
-#insidetopbg {
+/*Interoute name change for insidetopbg */
+#api_insidetopbg {
 	width:100%;
 	height:auto;
 	margin:0;
@@ -53,14 +59,17 @@ body{
 	overflow:hidden;
 }
 
-.uppermenu_panel {
+/*Interoute name change for uppermenu_panel */
+.api_uppermenu_panel {
 	width:100%;
 	height:auto;
 	float:left;
 	margin:0;
 	padding:0;
 }
-.uppermenu_box {
+
+/*Interoute name change for uppermenu_box */
+.api_uppermenu_box {
 	width:auto;
 	height:29px;
 	float:right;
@@ -69,7 +78,8 @@ body{
 	
 }
 
-.uppermenu {
+/*Interoute name change for uppermenu */
+.api_uppermenu {
 	width:300px;
 	height:auto;
 	float:left;
@@ -81,7 +91,8 @@ body{
 	margin:4px 10px 0 0;
 }
 
-.uppermenu a:link {
+/*Interoute name change for uppermenu */
+.api_uppermenu a:link {
 	width:auto;
 	height:auto;
 	color:#54bfd3;
@@ -92,7 +103,8 @@ body{
 	
 }
 
-.uppermenu a:visited {
+/*Interoute name change for uppermenu */
+.api_uppermenu a:visited {
 	width:auto;
 	height:auto;
 	color:#54bfd3;
@@ -103,7 +115,8 @@ body{
 	
 }
 
-.uppermenu a:hover {
+/*Interoute name change for uppermenu */
+.api_uppermenu a:hover {
 	width:auto;
 	height:auto;
 	color:#ccf004;
@@ -114,15 +127,16 @@ body{
 	
 }
 
-
-#main_master {
+/*Interoute name change for main_master */
+#api_main_master {
 	width:960px;
 	height:auto;
 	margin:0 auto;
 	padding:0;
 }
 
-#inside_header {
+/*Interoute name change for inside_header */
+#api_inside_header {
 	width:960px;
 	height:auto;
 	float:left;
@@ -130,15 +144,17 @@ body{
 	padding:0;
 }
 
-.header_top {
+/*Interoute name change for header_top */
+.api_header_top {
 	width:960px;
-	height:67px;
+	height:90px;
 	float:left;
 	margin:0;
 	padding:0;
 }
 
-.header_bot {
+/*Interoute name change for header_bot */
+.api_header_bot {
 	width:960px;
 	height:352px;
 	float:left;
@@ -146,7 +162,8 @@ body{
 	padding:0;
 }
 
-.insideheader_bot {
+/*Interoute name change for insideheader_bot */
+.api_insideheader_bot {
 	width:960px;
 	height:91px;
 	float:left;
@@ -154,7 +171,8 @@ body{
 	padding:0;
 }
 
-.insideheader_botleft {
+/*Interoute name change for insideheader_botleft */
+.api_insideheader_botleft {
 	width:620px;
 	height:91px;
 	float:left;
@@ -162,7 +180,8 @@ body{
 	padding:0;
 }
 
-.insideheader_botleft h1 {
+/*Interoute name change for insideheader_botleft */
+.api_insideheader_botleft h1 {
 	width:auto;
 	height:auto;
 	float:left;
@@ -175,7 +194,8 @@ body{
 	padding:0;
 }
 
-.insideheader_botright {
+/*Interoute name change for insideheader_botright */
+.api_insideheader_botright {
 	width:340px;
 	height:91px;
 	float:left;
@@ -183,7 +203,8 @@ body{
 	padding:0;
 }
 
-.insideheader_button {
+/*Interoute name change for insideheader_button */
+.api_insideheader_button {
 	width:340px;
 	height:32px;
 	float:left;
@@ -191,7 +212,8 @@ body{
 	padding:0;
 }
 
-a.insjoincomm_button {
+/*Interoute name change: insjoincomm_button */
+a.api_insjoincomm_button {
 	width:169px;
 	height:32px;
 	float:left;
@@ -200,11 +222,13 @@ a.insjoincomm_button {
 	padding:0;
 }
 
-a:hover.insjoincomm_button {
+/*Interoute name change: insjoincomm_button */
+a:hover.api_insjoincomm_button {
 	background:url(../images/insjoincomm_button_hover.gif) no-repeat top left;
 }
 
-a.insdownload_button {
+/*Interoute name change: insdownload_button */
+a.api_insdownload_button {
 	width:171px;
 	height:32px;
 	float:left;
@@ -213,11 +237,13 @@ a.insdownload_button {
 	padding:0;
 }
 
-a:hover.insdownload_button {
+/*Interoute name change for insdownload_button */
+a:api_hover.insdownload_button {
 	background:url(../images/insdownload_button_hover.gif) no-repeat top left;
 }
 
-.insheader_buttonshadow {
+/*Interoute name change for insheader_buttonshadow */
+.api_insheader_buttonshadow {
 	width:336px;
 	height:14px;
 	float:left;
@@ -225,7 +251,9 @@ a:hover.insdownload_button {
 	margin:0;
 	padding:0;
 }
-.header_botright {
+
+/*Interoute name change for header_botright */
+.api_header_botright {
 	width:550px;
 	height:352px;
 	float:left;
@@ -233,21 +261,23 @@ a:hover.insdownload_button {
 	padding:0;
 }
 
-.clear {
+/*Interoute name change for clear */
+.api_clear {
 	clear:both;
 }
 
-
-a.cloud_logo {
-	width:373px;
-	height:51px;
+/*Interoute name change for cloud_logo */
+a.api_cloud_logo {
+	width:211px;
+	height:80px;
 	float:left;
-	background:url(../images/cloudstack.png) no-repeat top left;
+	background:url(../images/Interoute_logo_RGB_211x80.png) no-repeat top left;
 	margin:8px 0 0 0;
 	padding:0;
 }
 
-.mainemenu_panel {
+/*Interoute name change for mainemenu_panel */
+.api_mainemenu_panel {
 	width: 801px;
 	height:51px;
 	float:left;
@@ -255,7 +285,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.mainemenu_links {
+/*Interoute name change for mainemenu_links */
+.api_mainemenu_links {
 	width: auto;
 	height:auto;
 	float:right;
@@ -263,7 +294,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.mainemenu_links a:link {
+/*Interoute name change for mainemenu_links */
+.api_mainemenu_links a:link {
 	width: auto;
 	height:auto;
 	font-size:18px;
@@ -275,7 +307,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.mainemenu_links a:visited {
+/*Interoute name change for mainemenu_links */
+.api_mainemenu_links a:visited {
 	width: auto;
 	height:auto;
 	font-size:18px;
@@ -287,7 +320,8 @@ a.cloud_logo {
 	color:#FFF;
 }
 
-.mainemenu_links a:hover {
+/*Interoute name change for mainemenu_links */
+.api_mainemenu_links a:hover {
 	width: auto;
 	height:auto;
 	font-size:18px;
@@ -299,7 +333,8 @@ a.cloud_logo {
 	color:#FFF;
 }
 
-#main_content {
+/*Interoute name change for main_content */
+#api_main_content {
 	width:960px;
 	min-height:600px;
 	height:auto;
@@ -308,7 +343,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.main_homecontent_left {
+/*Interoute name change for main_homecontent_left */
+.api_main_homecontent_left {
 	width:600px;
 	height:auto;
 	float:left;
@@ -316,7 +352,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.home_introbox {
+/*Interoute name change for home_introbox */
+.api_home_introbox {
 	width:600px;
 	height:auto;
 	float:left;
@@ -324,7 +361,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.home_introbox h1 {
+/*Interoute name change for home_introbox */
+.api_home_introbox h1 {
 	width:600px;
 	height:auto;
 	float:left;
@@ -336,7 +374,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.home_introbox p {
+/*Interoute name change for home_introbox */
+.api_home_introbox p {
 	width:600px;
 	height:auto;
 	float:left;
@@ -347,7 +386,9 @@ a.cloud_logo {
 	margin:10px 0 0 0;
 	padding:0;
 } 
-.main_homecontent_right {
+
+/*Interoute name change for main_homecontent_right */
+.api_main_homecontent_right {
 	width:311px;
 	height:auto;
 	float:right;
@@ -355,7 +396,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-#news_panel {
+/*Interoute name change for news_panel */
+#api_news_panel {
 	width:600px;
 	height:auto;
 	float:left;
@@ -363,7 +405,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-#news_panel h2 {
+/*Interoute name change for news_panel */
+#api_news_panel h2 {
 	width:auto;
 	height:auto;
 	float:left;
@@ -373,7 +416,8 @@ a.cloud_logo {
 	text-align:left;
 }
 
-.news_box {
+/*Interoute name change for news_box */
+.api_news_box {
 	width:600px;
 	height:auto;
 	float:left;
@@ -381,7 +425,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.news_box a:link {
+/*Interoute name change for news_box */
+.api_news_box a:link {
 	width:600px;
 	height:auto;
 	float:left;
@@ -392,7 +437,8 @@ a.cloud_logo {
 	font-size:15px;
 }
 
-.news_box a:visited {
+/*Interoute name change for news_box */
+.api_news_box a:visited {
 	width:600px;
 	height:auto;
 	float:left;
@@ -403,18 +449,20 @@ a.cloud_logo {
 	font-size:15px;
 }
 
-.news_box a:hover {
+/*Interoute name change for news_box */
+.api_news_box a:hover {
 	width:600px;
 	height:auto;
 	float:left;
-	color:#666;
+	color:#000000;
 	text-align:left;
 	text-decoration:none;
 	font-weight:normal;
-	font-size:15px;
+	font-size:12px;
 }
 
-.news_box p {
+/*Interoute name change for news_box */
+.api_news_box p {
 	width:600px;
 	height:auto;
 	float:left;
@@ -425,7 +473,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.news_box span {
+/*Interoute name change for news_box */
+.api_news_box span {
 	width:auto;
 	height:auto;
 	float:left;
@@ -437,7 +486,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-#partners_panel {
+/*Interoute name change for partners_panel */
+#api_partners_panel {
 	width:311px;
 	height:auto;
 	float:left;
@@ -445,7 +495,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-#partners_panel h2 {
+/*Interoute name change for partners_panel */
+#api_partners_panel h2 {
 	width:300px;
 	height:auto;
 	float:left;
@@ -455,7 +506,8 @@ a.cloud_logo {
 	text-align:left;
 }
 
-.partners_box {
+/*Interoute name change for partners_box */
+.api_partners_box {
 	width:310px;
 	height:auto;
 	float:left;
@@ -463,7 +515,8 @@ a.cloud_logo {
 	margin:15px 0 0 0;
 }
 
-.partners_box_logo {
+/*Interoute name change for partners_box */
+.api_partners_box_logo {
 	width:auto;
 	height:auto;
 	float:left;
@@ -473,7 +526,8 @@ a.cloud_logo {
 	border:0;
 }
 
-.partners_box_small {
+/*Interoute name change for partners_box_small */
+.api_partners_box_small {
 	width:155px;
 	height:80px;
 	float:left;
@@ -481,7 +535,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.readmore_box {
+/*Interoute name change for readmore_box */
+.api_readmore_box {
 	width:100%;
 	height:29px;
 	float:left;
@@ -489,7 +544,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.readmore_box a:link {
+/*Interoute name change for readmore_box */
+.api_readmore_box a:link {
 	width:auto;
 	height:auto;
 	float:right;
@@ -502,7 +558,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.readmore_box a:visited {
+/*Interoute name change for readmore_box */
+.api_readmore_box a:visited {
 	width:auto;
 	height:auto;
 	float:right;
@@ -515,7 +572,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.readmore_box a:hover {
+/*Interoute name change for readmore_box */
+.api_readmore_box a:hover {
 	width:auto;
 	height:auto;
 	float:right;
@@ -528,7 +586,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-#footer {
+/*Interoute name change for footer */
+#api_footer {
 	width:100%;
 	height:auto;
 	background:#cdcdcd repeat top left;
@@ -537,7 +596,8 @@ a.cloud_logo {
 	float:left;
 }
 
-#inside_footer {
+/*Interoute name change for inside_footer */
+#api_inside_footer {
 	width:100%;
 	height:auto;
 	background:#cdcdcd repeat top left;
@@ -547,15 +607,16 @@ a.cloud_logo {
 	bottom:0;
 }
 
-
-#footer_mainmaster {
+/*Interoute name change for footer_mainmaster */
+#api_footer_mainmaster {
 	width:960px;
 	height:auto;
-	margin:0 auto;
+	margin:auto;
 	padding:0;
 }
 
-#footer_mainmaster p{
+/*Interoute name change for footer_mainmaster */
+#api_footer_mainmaster p{
 	width:100%;
 	height:auto;
 	float:left;
@@ -566,7 +627,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.footer_linksbox {
+/*Interoute name change for footer_linksbox */
+.api_footer_linksbox {
 	width:180px;
 	height:auto;
 	float:left;
@@ -574,7 +636,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.footer_linksbox li {
+/*Interoute name change for footer_linksbox */
+.api_footer_linksbox li {
 	width:170px;
 	height:auto;
 	float:left;
@@ -584,7 +647,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.footer_linksbox a:link {
+/*Interoute name change for footer_linksbox */
+.api_footer_linksbox a:link {
 	width:auto;
 	height:auto;
 	float:left;
@@ -594,7 +658,8 @@ a.cloud_logo {
 	text-decoration:none;
 }
 
-.footer_linksbox a:visited {
+/*Interoute name change for footer_linksbox */
+.api_footer_linksbox a:visited {
 	width:auto;
 	height:auto;
 	float:left;
@@ -604,7 +669,8 @@ a.cloud_logo {
 	text-decoration:none;
 }
 
-.footer_linksbox a:hover {
+/*Interoute name change for footer_linksbox */
+.api_footer_linksbox a:hover {
 	width:auto;
 	height:auto;
 	float:left;
@@ -614,7 +680,8 @@ a.cloud_logo {
 	text-decoration:none;
 }
 
-.inside_leftpanel {
+/*Interoute name change for inside_leftpanel */
+.api_inside_leftpanel {
 	width:212px;
 	height:auto;
 	float:left;
@@ -622,7 +689,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.inside_rightpanel {
+/*Interoute name change for inside_rightpanel */
+.api_inside_rightpanel {
 	width:718px;
 	height:auto;
 	float:right;
@@ -630,7 +698,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.inside_contentpanel {
+/*Interoute name change for inside_contentpanel */
+.api_inside_contentpanel {
 	width:700px;
 	height:auto;
 	float:left;
@@ -638,19 +707,21 @@ a.cloud_logo {
 	padding:0;
 }
 
-.inside_contentpanel h1{
+/*Interoute name change for inside_contentpanel */
+.api_inside_contentpanel h1{
 	width:700px;
 	height:auto;
 	float:left;
-	color:#199cb4;
-	font-size:20px;
+	/*color:#199cb4;*/
+	font-size:24px;
 	font-weight:normal;
 	text-align:left;
 	margin:0;
 	padding:0;
 }
 
-.inside_contentpanel h2{
+/*Interoute name change for inside_contentpanel */
+.api_inside_contentpanel h2{
 	width:700px;
 	height:auto;
 	float:left;
@@ -662,8 +733,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-
-.inside_contentpanel h3{
+/*Interoute name change for inside_contentpanel */
+.api_inside_contentpanel h3{
 	width:700px;
 	height:auto;
 	float:left;
@@ -674,7 +745,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.inside_contentpanel h4{
+/*Interoute name change for inside_contentpanel */
+.api_inside_contentpanel h4{
 	width:700px;
 	height:auto;
 	float:left;
@@ -685,7 +757,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.inside_contentpanel p {
+/*Interoute name change for inside_contentpanel */
+.api_inside_contentpanel p {
 	width:100%;
 	height:auto;
 	float:left;
@@ -696,7 +769,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.inside_contentpanel a:link {
+/*Interoute name change for inside_contentpanel */
+.api_inside_contentpanel a:link {
 	width:auto;
 	height:auto;
 	color:#009fcd;
@@ -707,7 +781,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.inside_contentpanel a:visited {
+/*Interoute name change for inside_contentpanel */
+.api_inside_contentpanel a:visited {
 	width:auto;
 	height:auto;
 	color:#009fcd;
@@ -718,7 +793,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.inside_contentpanel a:hover {
+/*Interoute name change for inside_contentpanel */
+.api_inside_contentpanel a:hover {
 	width:auto;
 	height:auto;
 	color:#009fcd;
@@ -729,7 +805,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.download_text {
+/*Interoute name change for download_text */
+.api_download_text {
 	width:600px;
 	height:auto;
 	float:left;
@@ -740,7 +817,8 @@ a.cloud_logo {
 	margin:20px 0 15px 0
 }
 
-.download_textbox {
+/*Interoute name change for download_textbox */
+.api_download_textbox {
 	width:720px;
 	height:auto;
 	float:left;
@@ -752,7 +830,8 @@ a.cloud_logo {
 	border-top:1px dashed #999;
 }
 
-.screenshots_box {
+/*Interoute name change for screenshots_box */
+.api_screenshots_box {
 	width:454px;
 	height:455px;
 	float:left;
@@ -761,7 +840,8 @@ a.cloud_logo {
 	display:inline;
 }
 
-.apiannouncement_box {
+/*Interoute name change for apiannouncement_box  */
+.api_announcement_box {
 	width:928px;
 	height:auto;
 	float:left;
@@ -770,7 +850,8 @@ a.cloud_logo {
 	border:1px solid #9dd2eb;
 }
 
-.apiannouncement_contentarea {
+/*Interoute name change for apiannouncement_box  */
+.api_announcement_contentarea {
 	width:895px;
 	height:auto;
 	float:left;
@@ -779,7 +860,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.inside_apileftpanel {
+/*Interoute name change for inside_apileftpanel  */
+.api_inside_apileftpanel {
 	width:930px;
 	height:left;
 	float:left;
@@ -787,6 +869,7 @@ a.cloud_logo {
 	padding:0;
 }
 
+/*Interoute name change for leftsections */
 .api_leftsections {
 	width:928px;
 	height:auto;
@@ -796,8 +879,7 @@ a.cloud_logo {
 	padding:0;
 }
 
-
-
+/*Interoute name change for leftsections  */
 .api_leftsections span {
 	width:700px;
 	height:auto;
@@ -824,7 +906,7 @@ a.cloud_logo {
 	width:250px;
 	height:auto;
 	float:left;
-	color:#333;
+	color:#000000;
 	text-align:left;
 	font-size:11px;
 	font-weight:normal;
@@ -835,7 +917,7 @@ a.cloud_logo {
 .api_legends_async{
 	width:auto !important;
 	height:auto;
-	color:#2c8bbc !important;
+	/*color:#000000 !important;*/
 	font-size:11px;
 	font-weight:normal;
 	text-align:left;
@@ -854,7 +936,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.apismallsections {
+/*Interoute name change for apismallsections  */
+.api_smallsections {
 	width:925px;
 	height:auto;
 	float:left;
@@ -863,7 +946,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.apismallbullet_box {
+/*Interoute name change for apismallbullet_box  */
+.api_smallbullet_box {
 	width:231px;
 	height:auto;
 	float:left;
@@ -872,7 +956,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.apismallbullet_box h5 {
+/*Interoute name change for apismallbullet_box  */
+.api_smallbullet_box h5 {
 	width:120px;
 	height:auto;
 	float:left;
@@ -884,7 +969,8 @@ a.cloud_logo {
 	padding:0 0 10px 0;
 }
 
-.apismallbullet_box h6 {
+/*Interoute name change for apismallbullet_box  */
+.api_smallbullet_box h6 {
 	width:120px;
 	height:auto;
 	float:left;
@@ -896,7 +982,8 @@ a.cloud_logo {
 	padding:0 0 10px 0;
 }
 
-.apismallbullet_box li {
+/*Interoute name change for apismallbullet_box  */
+.api_smallbullet_box li {
 	width:188px;
 	height:auto;
 	float:left;
@@ -909,7 +996,8 @@ a.cloud_logo {
 	border-bottom:1px dotted #999;
 }
 
-.apismallbullet_box a{
+/*Interoute name change for apismallbullet_box  */
+.api_smallbullet_box a{
 	width:auto;
 	height:auto;
 	float:left;
@@ -922,11 +1010,14 @@ a.cloud_logo {
 	text-decoration:none;
 }
 
-.apismallbullet_box a:link, .apismallbullet_box a:visited {
+/*Interoute name change for apismallbullet_box  */
+.api_smallbullet_box a:link, .api_smallbullet_box a:visited {
+        color:#0da1df;
 	text-decoration:none;
 }
 
-.apismallbullet_box a:hover {
+/*Interoute name change for apismallbullet_box  */
+.api_smallbullet_box a:hover {
 	text-decoration:underline;
 }
 
@@ -942,7 +1033,7 @@ a.cloud_logo {
 	width:800px;
 	height:auto;
 	float:left;
-	color:#666;
+	color:#000000;
 	font-size:14px;
 	font-weight:bold;
 	text-align:left;
@@ -950,7 +1041,8 @@ a.cloud_logo {
 	padding:0;
 }
 
-.apitable {
+/*Interoute name change for apitable  */
+.api_table {
 	width:100%;
 	height:auto;
 	float:left;
@@ -968,7 +1060,7 @@ a.cloud_logo {
 	border:1px solid #CCC;
 	margin:10px 0 0 30px;
 	padding:10px;
-	color:#333;
+	color:#000000;
 	font-size:11px;
 	font-weight:normal;
 	text-align:left;
@@ -982,63 +1074,78 @@ a.cloud_logo {
 	border:1px solid #9DD2EB;
 	margin:10px 0 0 30px;
 	padding:10px;
-	color:#333;
+	color:#000000;
 	font-size:11px;
 	font-weight:normal;
 	text-align:left;
 }
 
-.apitable tr {
+/*Interoute name change for apitable  */
+.api_table tr {
 	width:100%;
 	height:auto;
 	float:left;
 	border-collapse:collapse;
-	border-bottom:1px solid #d5e8f1;
+	border-bottom:1px solid #92d4ef;
 	margin:0;
 	padding:0;
 }
 
-.apitable tr.hed {
+/*Interoute name change for apitable  */
+.api_table tr.hed {
 	width:100%;
 	height:22px;
 	float:left;
-	background:#e7e7e7;
+	/*background:#e7e7e7;*/
 	border-collapse:collapse;
-	border-top:1px solid #999;
-	border-bottom:1px solid #999;
+	border-top:2px solid #999;
+	border-bottom:2px solid #999;
 	margin:15px 0 0 0;
 	padding:0;
 	border-left:none;
 	border-right:none;
 }
 
-.apitable td {
+/*Interoute name change for apitable  */
+.api_table tr.hed td {
 	height:auto;
 	float:left;
 	border:none;
-	color:#333;
+	color:#00aaef;
 	font-size:12px;
-	font-weight:normal;
+	font-weight:bold;
 	border-collapse:collapse;
 	text-align:left;
 	padding:5px;
 	margin:0;
 }
 
-
-.apitable td.p{
+/*Interoute name change for apitable  */
+.api_table td {
 	height:auto;
 	float:left;
 	border:none;
-	color:#333;
+	color:#000000;
 	font-size:12px;
 	font-weight:normal;
+        border-collapse:collapse;
 	text-align:left;
 	padding:5px;
 	margin:0;
 }
 
-
+/*Interoute name change: apitable  */
+.api_table td.p{
+       height:auto;
+       float:left;
+       border:none;
+       color:#000000;
+       font-size:12px;
+       font-weight:normal;
+       text-align:left;
+       padding:5px;
+       margin:0;
+}
 
 .api_titlebox {
 	width:100%;
@@ -1078,8 +1185,8 @@ a.cloud_logo {
 }
 
 a.api_backbutton {
-	width:60px !important;
-	height:19px !important;
+	width:275px !important;
+	height:35px !important;
 	float:right;
 	background:#F00 url(../images/back_button.gif) no-repeat top left;
 	margin:10px 0 0 0 !important;

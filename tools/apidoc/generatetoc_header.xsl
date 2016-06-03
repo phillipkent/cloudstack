@@ -26,44 +26,46 @@ version="1.0">
 <link rel= "stylesheet" href="includes/main.css" type="text/css" />
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-<title>CloudStack API Reference</title>
+<title>Interoute VDC API Reference</title>
 </head>
-
+ 
 <body>
-<div id="insidetopbg">
-<div id="inside_wrapper">
-	<div class="uppermenu_panel">
-            <div class="uppermenu_box"></div>
+<div id="api_insidetopbg">
+<div id="api_inside_wrapper">
+	<div class="api_uppermenu_panel">
+            <div class="api_uppermenu_box"></div>
         </div>
         
-        <div id="main_master">
-            <div id="inside_header">
-                <div class="header_top">
-                    <a class="cloud_logo" href="http://cloudstack.org"></a>
-                    <div class="mainemenu_panel">
+        <div id="api_main_master">
+            <div id="api_inside_header">
+                <div class="api_header_top">
+                    <a class="api_cloud_logo" href="http://vdc.interoute.com"></a>
+                    <div class="api_mainemenu_panel">
                         
                     </div>
                 </div>
                 
             
             </div>
-            <div id="main_content">
+            <div id="api_main_content">
              	
-                <div class="inside_apileftpanel">
-                	<div class="inside_contentpanel" style="width:930px;">
+                <div class="api_inside_apileftpanel">
+                	<div class="api_inside_contentpanel" style="width:930px;">
               		  	<!-- Modify this line for the release version -->
-                    	<h1>Apache CloudStack API Documentation (v4.2.0)</h1>
-                        <div class="apiannouncement_box">
-                        	<div class="apiannouncement_contentarea">
-                                <h3>Using the CloudStack API</h3>
+                    	<h1>Interoute VDC API Reference</h1>
+                        <div class="api_apiannouncement_box">
+                        	<div class="api_apiannouncement_contentarea">
+                                <h3>Using the API</h3>
                                 <p>For information about how the APIs work, and tips on how to use them, see the
-                                    <a href="http://cloudstack.apache.org/docs/">Developer's Guide</a>.</p>
+                                    <a href="http://vdc.interoute.com/main/knowledge-centre/library/vdc-v2">Interoute VDC Knowledge Centre Library</a>.</p>
        					 	</div>
        					 </div>
                          
                          <div class="api_leftsections">
                       			<h3>%API_HEADER%</h3>
+                                <!--
                                 <span>Commands available through the developer API URL and the integration API URL.</span>
+                                -->
                                 <div class="api_legends">
            				<p><span class="api_legends_async">(A)</span> implies that the command is asynchronous.</p>
 					<p>(*) implies element has a child.</p>

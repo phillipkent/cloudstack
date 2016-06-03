@@ -29,7 +29,8 @@ import org.apache.log4j.Logger;
 import com.cloud.user.Account;
 import com.cloud.uservm.UserVm;
 
-@APICommand(name = "getVMPassword", responseObject=GetVMPasswordResponse.class, description="Returns an encrypted password for the VM")
+/* INTEROUTE VDC - THIS COMMAND IS REMOVED FROM PUBLISHED DOCUMENTATION */
+@APICommand(name = "getVMPassword", responseObject=GetVMPasswordResponse.class, description="Returns an encrypted password for the VM", includeInApiDoc=false)
 public class GetVMPasswordCmd extends BaseCmd {
     public static final Logger s_logger = Logger.getLogger(GetVMPasswordCmd.class.getName());
     private static final String s_name = "getvmpasswordresponse";
@@ -40,7 +41,7 @@ public class GetVMPasswordCmd extends BaseCmd {
     /////////////////////////////////////////////////////
 
     @Parameter(name=ApiConstants.ID, type=CommandType.UUID, entityType=UserVmResponse.class
-            , required=true, description="The ID of the virtual machine")
+            , required=true, description="the ID of the virtual machine")
     private Long id;
 
 

@@ -1,7 +1,4 @@
 #!/cygdrive/c/Python27
-#
-# FILE MODIFIED FOR INTEROUTE VDC 2.0 DOCUMENTATION, 2014-03-13
-# 
 # Licensed to the Apache Software Foundation (ASF) under one
 # or more contributor license agreements.  See the NOTICE file
 # distributed with this work for additional information
@@ -56,6 +53,7 @@ dirname_to_dirname = {
     'domain_admin': 'domain_admin',
     'root_admin': 'root_admin',
     }
+
 
 known_categories = {
     'Cisco' : 'External Device',
@@ -162,38 +160,9 @@ known_categories = {
     'CacheStore' : 'Cache Store'
     }
 
-#MODIFICATION FOR INTEROUTE
-interoute_whitelist_categories =  {
-     'Virtual Machine',
-     'Template',
-     'ISO',
-     'Volume',
-     'Address',
-     'Firewall',
-     'NAT',
-     'Snapshot',
-     'Guest OS',
-     'Service Offering',
-     'Disk Offering',
-     'Load Balancer',
-     'Network',
-     'Zone',
-     'Network Offering',
-     'VPN',
-     'Limit',
-     'Cloud Identifier',
-     'VM Group',
-     'SSH',
-     'Async job',
-     'Hypervisor',
-     'Event',
-     'Resource tags',
-     'API Discovery',
-     'Nic',
-     'Affinity Group'
-    }
 
 categories = {}
+
 
 def choose_category(fn):
     for k, v in known_categories.iteritems():
@@ -202,6 +171,7 @@ def choose_category(fn):
     raise Exception('Need to add a category for %s to %s:known_categories' %
                     (fn, __file__))
     sys.exit(1)
+
 
 for f in sys.argv:
     dirname, fn = os.path.split(f)
@@ -249,16 +219,13 @@ def write_xml(out, user):
         cat_strings = []
         
         for category in categories.keys():
-            #MODIFICATION FOR INTEROUTE- USE ONLY CATEGORIES IN THE WHITELIST
-            if category in interoute_whitelist_categories:
-                ##print('CATEGORY=' + category)
-                strings = []
-                for command in categories[category]:
-                     if command['user'] == user:
-                         strings.append(xml_for(command))
-                if strings:
-                    all_strings = ''.join(strings)
-                    cat_strings.append((len(strings), category, all_strings))
+            strings = []
+            for command in categories[category]:
+                if command['user'] == user:
+                    strings.append(xml_for(command))
+            if strings:
+                all_strings = ''.join(strings)
+                cat_strings.append((len(strings), category, all_strings))
 
         cat_strings.sort(reverse=True)
 
