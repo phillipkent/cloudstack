@@ -141,7 +141,7 @@ public class ApiXmlDocWriter {
         }
 
         if ((fileNames == null) || (fileNames.length == 0)) {
-            System.out.println("Please specify input file(s) separated by coma using -f option");
+            System.out.println("Please specify input file(s) separated by comma using -f option");
             System.exit(2);
         }
 

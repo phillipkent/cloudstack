@@ -1,4 +1,7 @@
 #!/cygdrive/c/Python27
+#
+# FILE MODIFIED FOR INTEROUTE VDC 2.0 DOCUMENTATION, 2016-07-19
+# 
 # Licensed to the Apache Software Foundation (ASF) under one
 # or more contributor license agreements.  See the NOTICE file
 # distributed with this work for additional information
@@ -176,6 +179,37 @@ known_categories = {
     }
 
 
+# MODIFICATION FOR INTEROUTE
+interoute_whitelist_categories =  {
+    'Virtual Machine',
+    'Template',
+    'ISO',
+    'Volume',
+    'Address',
+    'Firewall',
+    'NAT',
+    'Snapshot',
+    'User',
+    'Guest OS',
+    'Service Offering',
+    'Disk Offering',
+    'Load Balancer',
+    'Network',
+    'Zone',
+    'Network Offering',
+    'VPN',
+    'Limit',
+    'Cloud Identifier',
+    'VM Group',
+    'SSH',
+    'Async job',
+    'Event',
+    'Resource tags',
+    'API Discovery',
+    'Nic',
+    'Affinity Group'
+}
+
 categories = {}
 
 
@@ -235,13 +269,15 @@ def write_xml(out, user):
         cat_strings = []
 
         for category in categories.keys():
-            strings = []
-            for command in categories[category]:
-                if command['user'] == user:
-                    strings.append(xml_for(command))
-            if strings:
-                all_strings = ''.join(strings)
-                cat_strings.append((len(strings), category, all_strings))
+            # MODIFICATION FOR INTEROUTE- USE ONLY CATEGORIES IN THE WHITELIST
+            if category in interoute_whitelist_categories:
+               strings = []
+               for command in categories[category]:
+                  if command['user'] == user:
+                     strings.append(xml_for(command))
+               if strings:
+                  all_strings = ''.join(strings)
+                  cat_strings.append((len(strings), category, all_strings))
 
         cat_strings.sort(reverse=True)
 
