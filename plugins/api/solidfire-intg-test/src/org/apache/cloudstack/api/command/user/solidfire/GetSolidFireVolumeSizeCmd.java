@@ -34,7 +34,7 @@ import org.apache.cloudstack.context.CallContext;
 import org.apache.cloudstack.solidfire.ApiSolidFireService;
 import org.apache.cloudstack.storage.datastore.db.PrimaryDataStoreDao;
 
-@APICommand(name = "getSolidFireVolumeSize", responseObject = ApiSolidFireVolumeSizeResponse.class, description = "Get the SF volume size including Hypervisor Snapshot Reserve", requestHasSensitiveInfo = false, responseHasSensitiveInfo = false, includeInApiDocs = false)
+@APICommand(name = "getSolidFireVolumeSize", responseObject = ApiSolidFireVolumeSizeResponse.class, description = "Get the SF volume size including Hypervisor Snapshot Reserve", requestHasSensitiveInfo = false, responseHasSensitiveInfo = false, includeInApiDoc = false)
 public class GetSolidFireVolumeSizeCmd extends BaseCmd {
     private static final Logger s_logger = Logger.getLogger(GetSolidFireVolumeSizeCmd.class.getName());
     private static final String s_name = "getsolidfirevolumesizeresponse";

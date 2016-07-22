@@ -31,7 +31,7 @@ import org.apache.cloudstack.api.response.ApiSolidFireVolumeIscsiNameResponse;
 import org.apache.cloudstack.context.CallContext;
 import org.apache.cloudstack.solidfire.ApiSolidFireService;
 
-@APICommand(name = "getSolidFireVolumeIscsiName", responseObject = ApiSolidFireVolumeIscsiNameResponse.class, description = "Get SolidFire Volume's Iscsi Name", requestHasSensitiveInfo = false, responseHasSensitiveInfo = false, includeInApidoc = false)
+@APICommand(name = "getSolidFireVolumeIscsiName", responseObject = ApiSolidFireVolumeIscsiNameResponse.class, description = "Get SolidFire Volume's Iscsi Name", requestHasSensitiveInfo = false, responseHasSensitiveInfo = false, includeInApiDoc = false)
 public class GetSolidFireVolumeIscsiNameCmd extends BaseCmd {
     private static final Logger s_logger = Logger.getLogger(GetSolidFireVolumeIscsiNameCmd.class.getName());
     private static final String s_name = "getsolidfirevolumeiscsinameresponse";
