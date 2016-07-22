@@ -25,7 +25,7 @@ import org.apache.cloudstack.api.BaseListCmd;
 import org.apache.cloudstack.api.response.ListResponse;
 import org.apache.cloudstack.api.response.StorageTagResponse;
 
-@APICommand(name = "listStorageTags", description = "Lists storage tags", responseObject = StorageTagResponse.class, requestHasSensitiveInfo = false, responseHasSensitiveInfo = false)
+@APICommand(name = "listStorageTags", description = "Lists storage tags", responseObject = StorageTagResponse.class, requestHasSensitiveInfo = false, responseHasSensitiveInfo = false, includeInApiDoc = false)
 public class ListStorageTagsCmd extends BaseListCmd {
     public static final Logger s_logger = Logger.getLogger(ListStorageTagsCmd.class.getName());
 

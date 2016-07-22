@@ -30,8 +30,7 @@ import com.cloud.user.Account;
 import com.cloud.user.User;
 import com.cloud.user.UserAccount;
 
-@APICommand(name = "lockUser", description = "Locks a user account", responseObject = UserResponse.class,
-        requestHasSensitiveInfo = false, responseHasSensitiveInfo = true)
+@APICommand(name = "lockUser", description = "Locks a user account", responseObject = UserResponse.class, requestHasSensitiveInfo = false, responseHasSensitiveInfo = true, includeInApiDoc = false)
 public class LockUserCmd extends BaseCmd {
     public static final Logger s_logger = Logger.getLogger(LockUserCmd.class.getName());
 

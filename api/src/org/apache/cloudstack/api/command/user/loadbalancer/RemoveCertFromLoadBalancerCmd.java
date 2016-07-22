@@ -36,8 +36,7 @@ import com.cloud.exception.ResourceUnavailableException;
 import com.cloud.network.rules.LoadBalancer;
 import com.cloud.user.Account;
 
-@APICommand(name = "removeCertFromLoadBalancer", description = "Removes a certificate from a load balancer rule", responseObject = SuccessResponse.class,
-        requestHasSensitiveInfo = false, responseHasSensitiveInfo = false)
+@APICommand(name = "removeCertFromLoadBalancer", description = "Removes a certificate from a load balancer rule", responseObject = SuccessResponse.class, requestHasSensitiveInfo = false, responseHasSensitiveInfo = false, includeInApiDoc = false)
 public class RemoveCertFromLoadBalancerCmd extends BaseAsyncCmd {
 
     public static final Logger s_logger = Logger.getLogger(RemoveCertFromLoadBalancerCmd.class.getName());

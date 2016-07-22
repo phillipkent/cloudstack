@@ -40,8 +40,7 @@ import com.cloud.netapp.NetappManager;
 import com.cloud.netapp.NetappVolumeVO;
 import com.cloud.server.api.response.netapp.ListVolumesOnFilerCmdResponse;
 
-@APICommand(name = "listVolumesOnFiler", description = "List Volumes", responseObject = ListVolumesOnFilerCmdResponse.class,
-        requestHasSensitiveInfo = false, responseHasSensitiveInfo = false)
+@APICommand(name = "listVolumesOnFiler", description = "List Volumes", responseObject = ListVolumesOnFilerCmdResponse.class,requestHasSensitiveInfo = false, responseHasSensitiveInfo = false, includeInApiDoc = false)
 public class ListVolumesOnFilerCmd extends BaseCmd {
     public static final Logger s_logger = Logger.getLogger(ListVolumesOnFilerCmd.class.getName());
     private static final String s_name = "listvolumesresponse";

@@ -46,11 +46,7 @@ import com.cloud.region.ha.GlobalLoadBalancingRulesService;
 import com.cloud.user.Account;
 import com.cloud.utils.StringUtils;
 
-@APICommand(name = "assignToGlobalLoadBalancerRule",
-            description = "Assign load balancer rule or list of load " + "balancer rules to a global load balancer rules.",
-            responseObject = SuccessResponse.class,
-            requestHasSensitiveInfo = false,
-            responseHasSensitiveInfo = false)
+@APICommand(name = "assignToGlobalLoadBalancerRule", description = "Assign load balancer rule or list of load " + "balancer rules to a global load balancer rules.", responseObject = SuccessResponse.class, requestHasSensitiveInfo = false, responseHasSensitiveInfo = false, includeInApiDoc = false)
 public class AssignToGlobalLoadBalancerRuleCmd extends BaseAsyncCmd {
 
     public static final Logger s_logger = Logger.getLogger(AssignToGlobalLoadBalancerRuleCmd.class.getName());

@@ -40,10 +40,7 @@ import com.cloud.user.Account;
 import com.cloud.uservm.UserVm;
 import com.cloud.vm.VirtualMachine;
 
-@APICommand(name = "changeServiceForVirtualMachine", responseObject=UserVmResponse.class, description="Changes the service offering for a virtual machine. " +
-                                            "The virtual machine must be in a \"Stopped\" state for " +
-        "this command to take effect.", responseView = ResponseView.Restricted, entityType = {VirtualMachine.class},
-        requestHasSensitiveInfo = false, responseHasSensitiveInfo = true)
+@APICommand(name = "changeServiceForVirtualMachine", responseObject=UserVmResponse.class, description="Changes the service offering for a virtual machine. "+"The virtual machine must be in a \"Stopped\" state for "+"this command to take effect.", responseView = ResponseView.Restricted, entityType = {VirtualMachine.class}, requestHasSensitiveInfo = false, responseHasSensitiveInfo = true, includeInApiDoc=false)
 public class UpgradeVMCmd extends BaseCmd {
     public static final Logger s_logger = Logger.getLogger(UpgradeVMCmd.class.getName());
     private static final String s_name = "changeserviceforvirtualmachineresponse";

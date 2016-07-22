@@ -33,8 +33,7 @@ import org.apache.cloudstack.api.response.VpcResponse;
 import com.cloud.network.Site2SiteVpnConnection;
 import com.cloud.utils.Pair;
 
-@APICommand(name = "listVpnConnections", description = "Lists site to site vpn connection gateways", responseObject = Site2SiteVpnConnectionResponse.class, entityType = {Site2SiteVpnConnection.class},
-        requestHasSensitiveInfo = false, responseHasSensitiveInfo = false)
+@APICommand(name = "listVpnConnections", description = "Lists site to site vpn connection gateways", responseObject = Site2SiteVpnConnectionResponse.class, entityType = {Site2SiteVpnConnection.class}, requestHasSensitiveInfo = false, responseHasSensitiveInfo = false, includeInApiDoc = false)
 public class ListVpnConnectionsCmd extends BaseListProjectAndAccountResourcesCmd {
     public static final Logger s_logger = Logger.getLogger(ListVpnConnectionsCmd.class.getName());
 

@@ -27,8 +27,7 @@ import com.cloud.network.rules.LoadBalancer;
 import com.cloud.network.rules.StickinessPolicy;
 import com.cloud.user.Account;
 
-@APICommand(name = "updateLBHealthCheckPolicy", description = "Updates load balancer health check policy", responseObject = LBHealthCheckResponse.class, since = "4.4",
-requestHasSensitiveInfo = false, responseHasSensitiveInfo = false)
+@APICommand(name = "updateLBHealthCheckPolicy", description = "Updates load balancer health check policy", responseObject = LBHealthCheckResponse.class, since = "4.4", requestHasSensitiveInfo = false, responseHasSensitiveInfo = false, includeInApiDoc = false)
 public class UpdateLBHealthCheckPolicyCmd extends BaseAsyncCustomIdCmd{
     public static final Logger s_logger = Logger.getLogger(UpdateLBHealthCheckPolicyCmd.class.getName());
 

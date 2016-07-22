@@ -34,8 +34,7 @@ import org.apache.cloudstack.context.CallContext;
 import org.apache.cloudstack.solidfire.ApiSolidFireService;
 import org.apache.cloudstack.storage.datastore.db.PrimaryDataStoreDao;
 
-@APICommand(name = "getSolidFireVolumeAccessGroupId", responseObject = ApiSolidFireVolumeAccessGroupIdResponse.class, description = "Get the SF Volume Access Group ID",
-        requestHasSensitiveInfo = false, responseHasSensitiveInfo = false)
+@APICommand(name = "getSolidFireVolumeAccessGroupId", responseObject = ApiSolidFireVolumeAccessGroupIdResponse.class, description = "Get the SF Volume Access Group ID", requestHasSensitiveInfo = false, responseHasSensitiveInfo = false, includeInApiDoc = false)
 public class GetSolidFireVolumeAccessGroupIdCmd extends BaseCmd {
     private static final Logger s_logger = Logger.getLogger(GetSolidFireVolumeAccessGroupIdCmd.class.getName());
     private static final String s_name = "getsolidfirevolumeaccessgroupidresponse";
