@@ -26,23 +26,23 @@ version="1.0">
 <link rel= "stylesheet" href="../includes/main.css" type="text/css" />
 <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
 
-<title>Apache CloudStack | The Power Behind Your Cloud</title>
+<title>API Reference--Interoute Virtual Data Centre</title>
 </head>
 
 <body>
 <div id="insidetopbg">
 <div id="inside_wrapper">
-	<div class="uppermenu_panel">
-            <div class="uppermenu_box">       
+	<div class="api_uppermenu_panel">
+            <div class="api_uppermenu_box">       
 </div>
         </div>
         
         <div id="main_master">
             <div id="inside_header">
 
-                <div class="header_top">
-                    <a class="cloud_logo" href="http://cloudstack.org"></a>
-                    <div class="mainemenu_panel">
+                <div class="api_header_top">
+                    <a class="api_cloud_logo" href="http://cloudstack.org"></a>
+                    <div class="api_mainemenu_panel">
                         
                     </div>
                 </div>            
@@ -50,10 +50,10 @@ version="1.0">
 
             <div id="main_content">
              	
-                <div class="inside_apileftpanel">
-                	<div class="inside_contentpanel" style="width:930px;">
-                    	<div class="api_titlebox">
-                        	<div class="api_titlebox_left">
+                <div class="api_inside_apileftpanel">
+                	<div class="api_inside_contentpanel" style="width:930px;">
+                    	<div class="api_api_titlebox">
+                        	<div class="api_api_titlebox_left">
 				<xsl:for-each select="command/command">
                            		<!-- Modify this line for the release version -->
                            		<span>
@@ -66,14 +66,14 @@ version="1.0">
                             </div>
 
                             
-                            <div class="api_titlebox_right">
-                            	<a class="api_backbutton" href="../TOC_Root_Admin.html"></a>
+                            <div class="api_api_titlebox_right">
+                            	<a class="api_api_backbutton" href="../TOC_Root_Admin.html"></a>
                             </div>
                         </div>
-                    	<div class="api_tablepanel">     
+                    	<div class="api_api_tablepanel">     
                          	<h2>Request parameters</h2>
-                        	<table class="apitable">
-                            	<tr class="hed">
+                        	<table class="api_table">
+                            	<tr class="api_hed">
                                 	<td style="width:200px;"><strong>Parameter Name</strong></td>
 
                                     <td style="width:500px;">Description</td>
@@ -97,10 +97,10 @@ version="1.0">
                         </div>
                          
                          
-                         <div class="api_tablepanel">     
+                         <div class="api_api_tablepanel">     
                          	<h2>Response Tags</h2>
-                        	<table class="apitable">
-                            	<tr class="hed">
+                        	<table class="api_table">
+                            	<tr class="api_hed">
                                 	<td style="width:200px;"><strong>Response Name</strong></td>
                                     <td style="width:500px;">Description</td>
                                 </tr>
