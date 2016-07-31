@@ -35,7 +35,7 @@ import org.apache.log4j.Logger;
 
 import com.cloud.exception.ResourceAllocationException;
 
-@APICommand(name = "getUploadParamsForTemplate", description = "upload an existing template into the CloudStack cloud. ", responseObject = GetUploadParamsResponse.class, since = "4.6.0", requestHasSensitiveInfo = false, responseHasSensitiveInfo = false, includeInApiDoc = false)
+@APICommand(name = "getUploadParamsForTemplate", description = "upload an existing template into the CloudStack cloud. ", responseObject = GetUploadParamsResponse.class, since = "4.6.0", requestHasSensitiveInfo = false, responseHasSensitiveInfo = false, includeInApiDoc = true)
 public class GetUploadParamsForTemplateCmd extends AbstractGetUploadParamsCmd {
     public static final Logger s_logger = Logger.getLogger(GetUploadParamsForTemplateCmd.class.getName());
 

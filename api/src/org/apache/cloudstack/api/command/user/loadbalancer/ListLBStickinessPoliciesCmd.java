@@ -35,8 +35,7 @@ import com.cloud.network.rules.LoadBalancer;
 import com.cloud.network.rules.StickinessPolicy;
 import com.cloud.user.Account;
 
-@APICommand(name = "listLBStickinessPolicies", description = "Lists load balancer stickiness policies.", responseObject = LBStickinessResponse.class, since = "3.0.0",
-        requestHasSensitiveInfo = false, responseHasSensitiveInfo = false)
+@APICommand(name = "listLBStickinessPolicies", description = "Lists load balancer stickiness policies.", responseObject = LBStickinessResponse.class, since = "3.0.0", requestHasSensitiveInfo = false, responseHasSensitiveInfo = false, includeInApiDoc = false)
 public class ListLBStickinessPoliciesCmd extends BaseListCmd {
     public static final Logger s_logger = Logger.getLogger(ListLBStickinessPoliciesCmd.class.getName());
 
