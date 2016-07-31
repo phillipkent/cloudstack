@@ -35,8 +35,7 @@ import com.cloud.exception.InternalErrorException;
 import com.cloud.template.VirtualMachineTemplate;
 import com.cloud.user.Account;
 
-@APICommand(name = "extractTemplate", description = "Extracts a template", responseObject = ExtractResponse.class,
-        requestHasSensitiveInfo = false, responseHasSensitiveInfo = false)
+@APICommand(name = "extractTemplate", description = "Extracts a template", responseObject = ExtractResponse.class, requestHasSensitiveInfo = false, responseHasSensitiveInfo = false, includeInApiDoc = false)
 public class ExtractTemplateCmd extends BaseAsyncCmd {
     public static final Logger s_logger = Logger.getLogger(ExtractTemplateCmd.class.getName());
 

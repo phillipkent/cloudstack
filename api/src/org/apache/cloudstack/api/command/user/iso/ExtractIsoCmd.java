@@ -35,8 +35,7 @@ import com.cloud.exception.InternalErrorException;
 import com.cloud.template.VirtualMachineTemplate;
 import com.cloud.user.Account;
 
-@APICommand(name = "extractIso", description = "Extracts an ISO", responseObject = ExtractResponse.class,
-        requestHasSensitiveInfo = false, responseHasSensitiveInfo = false)
+@APICommand(name = "extractIso", description = "Extracts an ISO", responseObject = ExtractResponse.class, requestHasSensitiveInfo = false, responseHasSensitiveInfo = false, includeInApiDoc = false)
 public class ExtractIsoCmd extends BaseAsyncCmd {
     public static final Logger s_logger = Logger.getLogger(ExtractIsoCmd.class.getName());
 
