@@ -85,7 +85,7 @@ version="1.0">
                     	<div class="api_api_tablepanel">     
                          	<h2>Request parameters</h2>
                         	<table class="api_table">
-                            	<tr class="api_hed">
+                            	<tr class="hed">
                                 	<td style="width:200px;"><strong>Parameter Name</strong></td>
 
                                     <td style="width:500px;">Description</td>
@@ -106,7 +106,7 @@ version="1.0">
                          <div class="api_api_tablepanel">     
                          	<h2>Response Tags</h2>
                         	<table class="api_table">
-                            	<tr class="api_hed">
+                            	<tr class="hed">
                                 	<td style="width:200px;"><strong>Response Name</strong></td>
                                     <td style="width:500px;">Description</td>
                                 </tr>

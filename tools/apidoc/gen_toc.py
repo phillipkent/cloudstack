@@ -284,8 +284,8 @@ def write_xml(out, user):
         i = 0
         for _1, category, all_strings in cat_strings:
             if i == 0:
-                f.write('<div class="apismallsections">\n')
-            f.write('''<div class="apismallbullet_box">
+                f.write('<div class="api_smallsections">\n')
+            f.write('''<div class="api_smallbullet_box">
 <h5>%(category)s</h5>
 <ul>
 <xsl:for-each select="commands/command">

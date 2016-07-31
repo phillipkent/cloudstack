@@ -52,7 +52,7 @@ public class UpdateSnapshotPolicyCmd extends BaseAsyncCustomIdCmd {
 
     @Parameter(name = ApiConstants.FOR_DISPLAY,
             type = CommandType.BOOLEAN,
-            description = "an optional field, whether to the display the snapshot policy to the end user or not.",
+            description = "an optional field, whether to display the snapshot policy to the end user or not.",
             since = "4.4",
             authorized = {RoleType.Admin})
     private Boolean display;
