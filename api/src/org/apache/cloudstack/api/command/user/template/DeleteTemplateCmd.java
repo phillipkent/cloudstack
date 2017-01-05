@@ -36,7 +36,7 @@ import com.cloud.user.Account;
 
 @APICommand(name = "deleteTemplate",
             responseObject = SuccessResponse.class,
-            description = "Deletes a template from the system. All virtual machines using the deleted template will not be affected.",
+            description = "Deletes a template from the system. All virtual machines using the deleted template will not be affected. If zoneid is not specified, then all copies of the template will be deleted, otherwise only the copy in the specified zone will be deleted.",
             requestHasSensitiveInfo = false, responseHasSensitiveInfo = false)
 public class DeleteTemplateCmd extends BaseAsyncCmd {
     public static final Logger s_logger = Logger.getLogger(DeleteTemplateCmd.class.getName());
